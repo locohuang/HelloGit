@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_table_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context="com.example.my.hellogit.ActivityTableLayout">
+    <TableRow >
+        <TextView
+
+            android:text="text1"
+            />
+        <TextView
+
+            android:text="text1"
+            />
+        <TextView
+
+            android:text="text1"
+            />
+        <TextView
+
+            android:text="text1"
+            />
+    </TableRow>
+    <View android:layout_height="1dip"
+        android:background="#000fff"
+        android:layout_width="match_parent"/>
+    <TableRow android:layout_width="match_parent"
+
+        >
+        <TextView
+            android:gravity="center"
+            android:text="text1"
+            android:layout_span="2"
+            android:layout_column="0"
+            />
+        <TextView
+            android:text="text2"
+            android:gravity="center"
+            android:layout_span="2"
+            android:layout_column="1"
+
+            />
+    </TableRow>
+    <View android:layout_height="1dip"
+        android:background="#000fff"
+        android:layout_width="match_parent"/>
+</TableLayout>

@@ -10,8 +10,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.my.hellogit.MainActivity">
 
-    <TextView
+    <CheckBox
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/cb_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="unchecked"
+        />
+    <ToggleButton
+        android:id="@+id/tb_test"
+        android:layout_marginLeft="5dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cb_test"
+        android:layout_alignBaseline="@id/cb_test"
+        />
+    <Switch
+        android:id="@+id/switch_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_test"
+        />
+    <RadioGroup
+        android:id="@+id/rg_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_test"
+        >
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:text="男"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:text="女"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
 </RelativeLayout>
