@@ -2,6 +2,7 @@ package com.example.my.hellogit;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -38,12 +39,23 @@ public class ActivityListView extends Activity {
 
             }
         });
+        listView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)
+                    Toast.makeText(ActivityListView.this,view.getId()+" down ",Toast.LENGTH_SHORT).show();
+                if(motionEvent.getAction()==MotionEvent.ACTION_UP)
+                    Toast.makeText(ActivityListView.this,view.getId()+" up ",Toast.LENGTH_SHORT).show();
+
+                return false;//return true;
+            }
+        });
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(ActivityListView.this,items[i],Toast.LENGTH_SHORT).show();
 
-                return false;
+                return true;
             }
         });
         //此方法用于类似TV远程控制器选择操作
