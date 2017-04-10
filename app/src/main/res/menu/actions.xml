@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add"
+        android:title="add"
+        app:showAsAction="never"
+
+        android:icon="@mipmap/ic_launcher"
+        />
+    <item android:id="@+id/refresh"
+        android:title="refresh"
+
+
+        />
+    <item android:id="@+id/about"
+        android:title="about"
+
+
+        />
+    <item android:id="@+id/add1"
+        android:title="add"
+
+
+        android:icon="@mipmap/ic_launcher"
+        />
+    <item android:id="@+id/refresh1"
+        android:title="refresh1"
+        app:showAsAction="ifRoom"
+
+        />
+    <item android:id="@+id/about1"
+        android:title="about1"
+        app:showAsAction="collapseActionView"
+        />
+</menu>

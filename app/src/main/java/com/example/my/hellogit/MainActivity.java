@@ -66,4 +66,5 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
             cb_test.setText("unchecked");
         }
     }
+
 }

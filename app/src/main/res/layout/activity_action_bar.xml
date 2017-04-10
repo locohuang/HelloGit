@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.my.hellogit.ActivityActionBar">
+    <Button
+        android:id="@+id/mybutton"
+        android:text="baidu.com"
+        android:onClick="showMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+
+        android:id="@+id/et"
+        android:hint="选择日期"
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="select"
+        android:onClick="showDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Next"
+        android:onClick="next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

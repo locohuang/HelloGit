@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.my.hellogit.ActivityDemo">
+    <TextView
+        android:gravity="center"
+        android:text="个人信息"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:background="#001122"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="姓名："
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:gravity="left"
+            android:textSize="14sp"
+            android:id="@+id/et_name"
+            android:hint="输入姓名"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="身份证："
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:gravity="left"
+            android:textSize="14sp"
+            android:id="@+id/et_id"
+            android:hint="输入身份证"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="性别："
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbtn_male"
+                android:text="男"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbtn_female"
+                android:text="女"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:background="#001122"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <Button
+        android:layout_gravity="center"
+        android:text="显示"
+        android:onClick="display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#001122"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:hint="显示用户基本信息"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
